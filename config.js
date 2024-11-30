@@ -4,14 +4,14 @@ if (fs.existsSync(".env"))
   require("dotenv").config({ path: __dirname + "/.env" });
 
 //=======[dependencies]====================//
-global.SESSION_ID = process.env.SESSION_ID || "";
+global.SESSION_ID = process.env.SESSION_ID || "levanter_30d6458b9397d445aa82aeea7ef6893ff4";
 global.MONGODB = process.env.MONGODB_URI || "";
 global.DATABASE_URL = process.env.DATABASE_URL || "";
 global.sudo = process.env.SUDO
   ? process.env.SUDO.replace(/[\s+]/g, "")
   : "null";
 global.owner = process.env.OWNER_NUMBER
-  ? process.env.OWNER_NUMBER.replace(/[\s+]/g, "")
+  ? process.env.OWNER_NUMBER.replace(/[\s+]/g, "27629015564")
   : "null";
 global.THUMB_IMAGE =
   process.env.THUMB_IMAGE ||
